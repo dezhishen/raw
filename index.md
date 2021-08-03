@@ -1,0 +1,17 @@
+# 个人简历
+## 技能
+### 语言
+- java
+- golang
+- python
+### 中间件
+- mongo
+- redis
+- mysql
+- rabbitmq
+- docker
+- dockerswarm
+- k8s
+- ...
+### 其他
+- linux等
