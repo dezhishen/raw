@@ -7,6 +7,7 @@ image=koishijs/koishi:latest
 docker pull $image
 
 docker stop ${container_name}
+docker rm ${container_name}
 docker run --name=${container_name} \
         -d -it --restart=always \
         -p ${port}:${port} \
