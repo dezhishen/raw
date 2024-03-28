@@ -1,12 +1,12 @@
 #!/bin/bash
 base_data_dir=$1
-
+echo "path is ${base_data_dir}"
 container_name=koishi
 port=5140
 image=koishijs/koishi:latest
 docker pull $image
 
-`dirname $0`/stop-container.sh ${container_name}
+docker stop ${container_name}
 docker run --name=${container_name} \
         -d -it --restart=always \
         -p ${port}:${port} \
